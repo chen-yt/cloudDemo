@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/message/index",
+    "pages/gallery/index",
+    "pages/getCode/index",
+    "pages/clock/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#2f2f2f",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "云开发Demo"
+  },
+  "cloud": true,
+  "sitemapLocation": "sitemap.json"
+}

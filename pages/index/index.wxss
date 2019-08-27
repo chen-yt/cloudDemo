@@ -1,0 +1,11 @@
+page {
+  padding: 0 20px;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #2f2f2f;
+  color: white;
+  margin-top: 20px;
+}

@@ -1,0 +1,19 @@
+.img-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-list image {
+  flex: 33.33vw 0 0;
+  height: 33.33vw;
+}
+
+.root {
+  padding: 20px;
+  color: #2f2f2f;
+}
+
+.button {
+  background-color: #2f2f2f;
+  color: white;
+}

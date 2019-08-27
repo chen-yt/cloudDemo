@@ -1,0 +1,88 @@
+/* z-index 层级规范
+-10 背景层
+0 内容层
+10 导航层
+20 遮罩层
+30 弹框层 */
+
+/* .safe-area {
+  兼容 iOS < 11.2
+  constant(safe-area-inset-bottom)
+  兼容 iOS >= 11.2
+  env(safe-area-inset-bottom)
+} */
+
+.root {
+  width: 100%;
+  height: 100%;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+.back {
+  position: fixed;
+  left: 20px;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 17.5px;
+  overflow: visible;
+}
+
+/* 扩大点击区域 */
+.back::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.none_btn {
+  font: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: none !important;
+  line-height: unset !important;
+  text-align: inherit !important;
+  width: unset !important;
+  color: inherit !important;
+  position: unset !important;
+  box-sizing: inherit !important;
+  border: unset !important;
+  min-height: unset !important;
+}
+
+.none_btn::after {
+  display: none;
+}
+
+.absolute {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.scroll-x {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-y {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-x::-webkit-scrollbar, .scroll-y::-webkit-scrollbar {
+  display: none;
+}

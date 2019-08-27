@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "openapi": [
+      "subscribeMessage.send"
+    ]
+  },
+  "triggers": [
+    {
+      "name": "polling",
+      "type": "timer",
+      "config": "0 55 * * * * *"
+    }
+  ]
+}

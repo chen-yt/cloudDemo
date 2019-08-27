@@ -1,0 +1,16 @@
+<view class="img-list">
+  <image
+    wx:for="{{imgList}}"
+    src="{{item}}"
+    mode="aspectFill"
+    bindtap="preview"
+    data-index="{{index}}"
+  ></image>
+</view>
+
+<view class="root">
+  <button
+    class="button"
+    bindtap="upload"
+  >上传图片</button>
+</view>

@@ -1,0 +1,32 @@
+<view class="root">
+  <view class="message-list">
+    <view
+      wx:for="{{messageList}}"
+      class="message-item"
+    >
+      <view class="info">
+        <image src="{{item.avatarUrl}}"></image>
+
+        <view class="right">
+          <view class="nickname">来自 {{item.city}} 的 {{item.nickName}}</view>
+        
+          <view class="time">{{item.time}}</view>
+        </view>
+      </view>
+
+      <view class="message">{{item.message}}</view>
+    </view>
+  </view>
+
+  <textarea
+    class="textarea"
+    bindinput="inputText"
+    placeholder="输入您想说的话..."
+  ></textarea>
+
+  <button
+    class="button"
+    open-type="getUserInfo"
+    bindgetuserinfo="send"
+  >留言</button>
+</view>

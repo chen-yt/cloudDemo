@@ -1,0 +1,24 @@
+<view class="form">
+  <form bindsubmit="subscribe">
+    <input 
+      name="title"
+      placeholder="提醒标题"
+    ></input>
+
+    <input
+      name="time"
+      type="number"
+      maxlength="8"
+      value="{{value}}"
+      placeholder="提醒时间（格式：MM dd hh）"
+      bindinput="inputTime"
+    ></input>
+
+    <input 
+      name="note"
+      placeholder="备注"
+    ></input>
+
+    <button form-type="submit">设置提醒</button>
+  </form>
+</view>
