@@ -1,4 +1,6 @@
-<navigator url="/pages/message/index"><button>留言板</button></navigator>
-<navigator url="/pages/gallery/index"><button>云相册</button></navigator>
-<navigator url="/pages/getCode/index"><button>生成小程序码</button></navigator>
-<navigator url="/pages/clock/index"><button>定时提醒</button></navigator>
+<navigator
+  wx:for="{{menu}}"
+  url="{{item.url}}"
+>
+  <button>{{item.name}}</button>
+</navigator>

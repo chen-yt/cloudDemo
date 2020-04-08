@@ -32,10 +32,15 @@ Page({
         }
       }).then(() => {
         const duration = 1500
+
         wx.showToast({
           title: '留言成功！',
           mask: true,
           duration
+        })
+
+        this.setData({
+          value: ''
         })
 
         setTimeout(() => wx.startPullDownRefresh(), duration)

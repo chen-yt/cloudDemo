@@ -61,12 +61,6 @@
 			"list": [
 				{
 					"id": -1,
-					"name": "留言板",
-					"pathName": "pages/message/index",
-					"scene": null
-				},
-				{
-					"id": -1,
 					"name": "云相册",
 					"pathName": "pages/gallery/index",
 					"scene": null

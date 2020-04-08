@@ -42,7 +42,7 @@ async function sendMessage(item) {
     })
 
     if (result.errCode === 0) {
-      clock_col.doc(item._id).update({
+      await clock_col.doc(item._id).update({
         data: {
           status: 'done'
         }
@@ -51,9 +51,10 @@ async function sendMessage(item) {
 
     return result
   } catch (err) {
-    clock_col.doc(item._id).update({
+    await clock_col.doc(item._id).update({
       data: {
-        status: 'fail'
+        status: 'fail',
+        failInfo: err
       }
     })
 
@@ -68,11 +69,5 @@ exports.main = async (event, context) => {
     timestamp: _.lte(Date.now() + 6 * 60 * 1000)
   }).get()
 
-  let result = []
-
-  for (let i = 0; i < data.length; i++) {
-    result.push(await sendMessage(data[i]))
-  }
-
-  return result
+  return await Promise.all(data.map(item => sendMessage(item)))
 }

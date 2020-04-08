@@ -21,6 +21,7 @@
   <textarea
     class="textarea"
     bindinput="inputText"
+    value="{{value}}"
     placeholder="输入您想说的话..."
   ></textarea>
 

@@ -6,6 +6,14 @@ App({
       env: 'joson-test',
       traceUser: true
     })
+
+    // this.triggerTimer()
+  },
+
+  triggerTimer() {
+    wx.cloud.callFunction({
+      name: 'sendMessage'
+    }).then(console.log)
   }
 })
 
