@@ -7,6 +7,10 @@ App({
       traceUser: true
     })
 
+    // wx.cloud.callFunction({
+    //   name: 'getOpenId'
+    // }).then(console.log)
+
     // this.triggerTimer()
   },
 
