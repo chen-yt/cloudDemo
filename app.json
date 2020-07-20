@@ -2,6 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/message/index",
+    "pages/search/index",
+    "pages/chat/index",
     "pages/gallery/index",
     "pages/getCode/index",
     "pages/clock/index"

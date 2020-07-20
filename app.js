@@ -1,17 +1,11 @@
 require('./assets/wxapi.js')
 
 App({
-  onLaunch () {
+  onLaunch() {
     wx.cloud.init({
       env: 'joson-test',
       traceUser: true
     })
-
-    // wx.cloud.callFunction({
-    //   name: 'getOpenId'
-    // }).then(console.log)
-
-    // this.triggerTimer()
   },
 
   triggerTimer() {
