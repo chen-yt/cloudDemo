@@ -1,15 +1,11 @@
-const setting = wx.cloud.database().collection('setting').doc('dc65fe3e5e8e9b6c0054296d01cdcabf')
-
 Page({
-  onLoad() {
-    this.getMenu()
-  },
-
-  getMenu() {
-    setting.get().then(res => {
-      this.setData({
-        menu: res.data.menu
-      })
-    })
+  data: {
+    menu: [
+      { name: "云相册", url: "/pages/gallery/index" },
+      { name: "生成小程序码", url: "/pages/getCode/index" },
+      { name: "定时提醒", url: "/pages/clock/index" },
+      { name: "留言板", url: "/pages/message/index" },
+      { name: "搜索", url: "/pages/search/index" }
+    ]
   }
 })
