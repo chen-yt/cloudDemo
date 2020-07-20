@@ -1,0 +1,74 @@
+.root {
+  padding: 20px;
+  color: #2f2f2f;
+  overflow: hidden;
+}
+
+.search {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin: 20px 0;
+  padding: 0 20px;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid #2f2f2f;
+}
+
+.search__input {
+  flex: 1;
+}
+
+.message-list {
+  font-size: 14px;
+}
+
+.message-list .message-item {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 16px 0 rgba(59,74,116,0.14);
+}
+
+.message-list .message-item:first-child {
+  margin: 0;
+}
+
+.message-list .message-item .info {
+  display: flex;
+  align-items: center;
+}
+
+.message-list .message-item .info image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.message-list .message-item .info .right {
+  margin-left: 10px;
+}
+
+.message-list .message-item .info .time {
+  font-size: 10px;
+  color: #999;
+}
+
+.message-list .message-item .message {
+  padding: 10px 0;
+}
+
+.textarea {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.button {
+  margin-top: 20px;
+  background-color: #2f2f2f;
+  color: white;
+}
