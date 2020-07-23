@@ -1,0 +1,41 @@
+.camera > camera {
+  width: 100vw;
+  height: 100vw;
+}
+.camera__btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100vw;
+  bottom: 0;
+  display: flex;
+}
+.camera__btn-item {
+  position: relative;
+  height: 100%;
+  flex: 1;
+}
+.camera__btn-item > view,
+.camera__btn-item image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.camera__btn-item-photo {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 8rpx;
+  background-color: #2f2f2f;
+}
+.camera__btn-item-take {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  background-color: #2f2f2f;
+}
+.camera__btn-item-swap {
+  font-size: 24rpx;
+  color: #2f2f2f;
+  white-space: nowrap;
+}

@@ -1,3 +1,1 @@
-exports.main = (event, context) => {
-  return event.userInfo.openId
-}
+exports.main = async event => event.userInfo.openId

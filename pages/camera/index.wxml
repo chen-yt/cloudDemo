@@ -1,0 +1,23 @@
+<view class="camera">
+  <camera resolution="high" />
+
+  <view class="camera__btn">
+    <view class="camera__btn-item">
+      <image
+        class="camera__btn-item-photo"
+        src="{{imgUrl}}"
+        mode="aspectFill"
+        bindtap="enterGallery"
+      />
+    </view>
+
+    <view class="camera__btn-item">
+      <view
+        class="camera__btn-item-take"
+        bindtap="takePhotos"
+      />
+    </view>
+
+    <view class="camera__btn-item" />
+  </view>
+</view>

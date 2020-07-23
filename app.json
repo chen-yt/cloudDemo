@@ -1,17 +1,17 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/message/index",
-    "pages/search/index",
+    "pages/camera/index",
     "pages/chat/index",
     "pages/gallery/index",
-    "pages/getCode/index",
-    "pages/clock/index"
+    "pages/message/index",
+    "pages/search/index",
+    "pages/test/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#2f2f2f",
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "云开发Demo"
+    "navigationBarTitleText": "云开发 Demo"
   },
   "cloud": true,
   "sitemapLocation": "sitemap.json"

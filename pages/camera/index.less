@@ -1,0 +1,48 @@
+.camera {
+  > camera {
+    width: 100vw;
+    height: 100vw;
+  }
+
+  &__btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100vw;
+    bottom: 0;
+    display: flex;
+
+    &-item {
+      position: relative;
+      height: 100%;
+      flex: 1;
+
+      > view, image {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &-photo {
+        width: 80rpx;
+        height: 80rpx;
+        border-radius: 8rpx;
+        background-color: #2f2f2f;
+      }
+
+      &-take {
+        width: 160rpx;
+        height: 160rpx;
+        border-radius: 50%;
+        background-color: #2f2f2f;
+      }
+
+      &-swap {
+        font-size: 24rpx;
+        color: #2f2f2f;
+        white-space: nowrap;
+      }
+    }
+  }
+}

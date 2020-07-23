@@ -5,15 +5,15 @@ const message_col = db.collection('message')
 const _ = db.command
 
 exports.main = async event => {
-  const query = db.RegExp({
+  const reg = db.RegExp({
     regexp: event.content,
     options: 'i',
   })
   const { data } = await message_col.where(_.or([
-    { content: query },
-    { nickName: query },
-    { city: query },
-    { time: query }
+    { message: reg },
+    { nickName: reg },
+    { city: reg },
+    { time: reg }
   ])).get()
 
   return data

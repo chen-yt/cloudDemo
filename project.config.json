@@ -16,22 +16,29 @@
 	"setting": {
 		"urlCheck": true,
 		"es6": true,
+		"enhance": true,
 		"postcss": true,
+		"preloadBackgroundData": false,
 		"minified": true,
 		"newFeature": true,
 		"coverView": true,
+		"nodeModules": false,
 		"autoAudits": false,
 		"showShadowRootInWxmlPanel": true,
 		"scopeDataCheck": false,
+		"uglifyFileName": false,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
 		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
 		"babelSetting": {
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
 		},
-		"enhance": true
+		"useIsolateContext": true,
+		"useCompilerModule": false,
+		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.10.4",
@@ -70,20 +77,43 @@
 			"list": [
 				{
 					"id": -1,
+					"name": "测试页面",
+					"pathName": "pages/test/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "聊天室",
+					"pathName": "pages/chat/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Camera",
+					"pathName": "pages/camera/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
 					"name": "云相册",
 					"pathName": "pages/gallery/index",
+					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "生成小程序码",
-					"pathName": "pages/getCode/index",
+					"name": "留言板",
+					"pathName": "pages/message/index",
+					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "定时提醒",
-					"pathName": "pages/clock/index",
+					"name": "搜索",
+					"pathName": "pages/search/index",
 					"scene": null
 				}
 			]

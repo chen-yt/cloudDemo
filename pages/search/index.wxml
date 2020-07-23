@@ -31,17 +31,4 @@
       <view class="message">{{item.message}}</view>
     </view>
   </view>
-
-  <textarea
-    class="textarea"
-    bindinput="inputText"
-    value="{{value}}"
-    placeholder="输入您想说的话..."
-  ></textarea>
-
-  <button
-    class="button"
-    open-type="getUserInfo"
-    bindgetuserinfo="send"
-  >留言</button>
 </view>
